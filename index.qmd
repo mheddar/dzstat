@@ -2,6 +2,6 @@
 title: "DZ Stat"
 ---
 
-This is a Quarto.
+## Welocome
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi ✋, and welcom to DZ Stat, this is a personal project that I'm working on in my free time. 
