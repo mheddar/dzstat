@@ -59,9 +59,9 @@ website:
 format:
   html:
     theme:
-      light: default
-      dark: darkly
-    css: styles.css
+      light: [litera, my_theme.scss]
+      
+    #css: styles.css
     toc: true
 
 
