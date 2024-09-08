@@ -1,0 +1,91 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DZ Stat",
+    "section": "",
+    "text": "This is a Quarto.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Mohamed Heddar",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+  },
+  {
+    "objectID": "CH1_DEMOGRAPHIE/Table60/Untitled.html",
+    "href": "CH1_DEMOGRAPHIE/Table60/Untitled.html",
+    "title": "",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\ndf = pd.read_excel(\"Table60.xlsx\")\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 48 entries, 0 to 47\nData columns (total 6 columns):\n #   Column  Non-Null Count  Dtype  \n---  ------  --------------  -----  \n 0   Wilaya  48 non-null     object \n 1   1966    48 non-null     float64\n 2   1977    48 non-null     float64\n 3   1987    48 non-null     float64\n 4   1998    48 non-null     float64\n 5   2008    48 non-null     float64\ndtypes: float64(5), object(1)\nmemory usage: 2.4+ KB\n\n\n\nimport geopandas as gpd\nimport matplotlib.pyplot as plt\n\ntracts = gpd.read_file(\"converted_shape.csv\")\nprint('Observations, Attributes:',tracts.shape)\n# tracts[\"ADM1\"] = df.sort_values(\"Wilaya\")[\"Wilaya\"]\n# tracts = tracts.merge(df, left_on  = \"ADM1\", right_on= \"Wilaya\")\ntracts\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n~\\AppData\\Local\\Temp/ipykernel_10188/282596048.py in &lt;module&gt;\n      2 import matplotlib.pyplot as plt\n      3 \n----&gt; 4 tracts = gpd.read_file(\"converted_shape.csv\")\n      5 print('Observations, Attributes:',tracts.shape)\n      6 # tracts[\"ADM1\"] = df.sort_values(\"Wilaya\")[\"Wilaya\"]\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\io\\file.py in _read_file(filename, bbox, mask, rows, **kwargs)\n    242                 )\n    243 \n--&gt; 244             return GeoDataFrame.from_features(\n    245                 f_filt, crs=crs, columns=columns + [\"geometry\"]\n    246             )\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\geodataframe.py in from_features(cls, features, crs, columns)\n    608             row.update(feature[\"properties\"])\n    609             rows.append(row)\n--&gt; 610         return GeoDataFrame(rows, columns=columns, crs=crs)\n    611 \n    612     @classmethod\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\geodataframe.py in __init__(self, data, geometry, crs, *args, **kwargs)\n    146             # by pandas internals trying to access this\n    147             if (self.columns == \"geometry\").sum() &gt; 1:\n--&gt; 148                 raise ValueError(\n    149                     \"GeoDataFrame does not support multiple columns \"\n    150                     \"using the geometry column name 'geometry'.\"\n\nValueError: GeoDataFrame does not support multiple columns using the geometry column name 'geometry'.\n\n\n\n\ntracts.columns\n\nIndex([        'ID',        'LBL',        'FIP',     'MMT_ID', 'SHORT__FRM',\n         'LONG_FRM',       'ADM0',       'ADM1',       'ADM2',       'ADM3',\n             'ADM4',       'ADM5',      'STL-0',      'STL-1',      'STL-2',\n            'STL-3',      'STL-4',      'STL-5',   'geometry',     'Wilaya',\n               1966,         1977,         1987,         1998,         2008],\n      dtype='object')\n\n\n\nfig, ax = plt.subplots(figsize = (8, 8), dpi = 100)\ntracts.plot(column=1966, cmap='RdBu', edgecolor='w', legend=True, ax = ax)\nax.set_axis_off()\n\n\n\n\n\n\n\n\n\ntracts = gpd.GeoDataFrame.from_file(r\"D:\\\\OneDrive - ensmm-annaba.dz\\\\Algeria Statistics\\\\Algeria Shapefiles\\\\earthworks.stanford.edu\\\\ALG.shp\", encoding=\"utf-8\")\nprint('Observations, Attributes:',tracts.shape)\ntracts.columns\n\nObservations, Attributes: (48, 19)\n\n\nIndex(['ID', 'LBL', 'FIP', 'MMT_ID', 'SHORT__FRM', 'LONG_FRM', 'ADM0', 'ADM1',\n       'ADM2', 'ADM3', 'ADM4', 'ADM5', 'STL-0', 'STL-1', 'STL-2', 'STL-3',\n       'STL-4', 'STL-5', 'geometry'],\n      dtype='object')\n\n\n\ntracts.drop([\"LBL\", \"FIP\", \"MMT_ID\", \"SHORT__FRM\", \"LONG_FRM\", \"ADM0\", \"ADM2\", \"ADM3\", \"ADM4\", \"ADM5\"], axis = 1)\ntracts.to_csv(\"converted_shape.csv\")",
+    "crumbs": [
+      "CH1 DEMOGRAPHIE",
+      "Table60",
+      "Untitled"
+    ]
+  },
+  {
+    "objectID": "Chapters/CH1_DEMOGRAPHIE/Table60/Untitled.html",
+    "href": "Chapters/CH1_DEMOGRAPHIE/Table60/Untitled.html",
+    "title": "DZ Stat",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\ndf = pd.read_excel(\"Table60.xlsx\")\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 48 entries, 0 to 47\nData columns (total 6 columns):\n #   Column  Non-Null Count  Dtype  \n---  ------  --------------  -----  \n 0   Wilaya  48 non-null     object \n 1   1966    48 non-null     float64\n 2   1977    48 non-null     float64\n 3   1987    48 non-null     float64\n 4   1998    48 non-null     float64\n 5   2008    48 non-null     float64\ndtypes: float64(5), object(1)\nmemory usage: 2.4+ KB\n\n\n\nimport geopandas as gpd\nimport matplotlib.pyplot as plt\n\ntracts = gpd.read_file(\"converted_shape.csv\")\nprint('Observations, Attributes:',tracts.shape)\n# tracts[\"ADM1\"] = df.sort_values(\"Wilaya\")[\"Wilaya\"]\n# tracts = tracts.merge(df, left_on  = \"ADM1\", right_on= \"Wilaya\")\ntracts\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n~\\AppData\\Local\\Temp/ipykernel_10188/282596048.py in &lt;module&gt;\n      2 import matplotlib.pyplot as plt\n      3 \n----&gt; 4 tracts = gpd.read_file(\"converted_shape.csv\")\n      5 print('Observations, Attributes:',tracts.shape)\n      6 # tracts[\"ADM1\"] = df.sort_values(\"Wilaya\")[\"Wilaya\"]\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\io\\file.py in _read_file(filename, bbox, mask, rows, **kwargs)\n    242                 )\n    243 \n--&gt; 244             return GeoDataFrame.from_features(\n    245                 f_filt, crs=crs, columns=columns + [\"geometry\"]\n    246             )\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\geodataframe.py in from_features(cls, features, crs, columns)\n    608             row.update(feature[\"properties\"])\n    609             rows.append(row)\n--&gt; 610         return GeoDataFrame(rows, columns=columns, crs=crs)\n    611 \n    612     @classmethod\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\geodataframe.py in __init__(self, data, geometry, crs, *args, **kwargs)\n    146             # by pandas internals trying to access this\n    147             if (self.columns == \"geometry\").sum() &gt; 1:\n--&gt; 148                 raise ValueError(\n    149                     \"GeoDataFrame does not support multiple columns \"\n    150                     \"using the geometry column name 'geometry'.\"\n\nValueError: GeoDataFrame does not support multiple columns using the geometry column name 'geometry'.\n\n\n\n\ntracts.columns\n\nIndex([        'ID',        'LBL',        'FIP',     'MMT_ID', 'SHORT__FRM',\n         'LONG_FRM',       'ADM0',       'ADM1',       'ADM2',       'ADM3',\n             'ADM4',       'ADM5',      'STL-0',      'STL-1',      'STL-2',\n            'STL-3',      'STL-4',      'STL-5',   'geometry',     'Wilaya',\n               1966,         1977,         1987,         1998,         2008],\n      dtype='object')\n\n\n\nfig, ax = plt.subplots(figsize = (8, 8), dpi = 100)\ntracts.plot(column=1966, cmap='RdBu', edgecolor='w', legend=True, ax = ax)\nax.set_axis_off()\n\n\n\n\n\n\n\n\n\ntracts = gpd.GeoDataFrame.from_file(r\"D:\\\\OneDrive - ensmm-annaba.dz\\\\Algeria Statistics\\\\Algeria Shapefiles\\\\earthworks.stanford.edu\\\\ALG.shp\", encoding=\"utf-8\")\nprint('Observations, Attributes:',tracts.shape)\ntracts.columns\n\nObservations, Attributes: (48, 19)\n\n\nIndex(['ID', 'LBL', 'FIP', 'MMT_ID', 'SHORT__FRM', 'LONG_FRM', 'ADM0', 'ADM1',\n       'ADM2', 'ADM3', 'ADM4', 'ADM5', 'STL-0', 'STL-1', 'STL-2', 'STL-3',\n       'STL-4', 'STL-5', 'geometry'],\n      dtype='object')\n\n\n\ntracts.drop([\"LBL\", \"FIP\", \"MMT_ID\", \"SHORT__FRM\", \"LONG_FRM\", \"ADM0\", \"ADM2\", \"ADM3\", \"ADM4\", \"ADM5\"], axis = 1)\ntracts.to_csv(\"converted_shape.csv\")\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Chapters",
+      "CH1 DEMOGRAPHIE",
+      "Table60",
+      "Untitled"
+    ]
+  },
+  {
+    "objectID": "chapters.html",
+    "href": "chapters.html",
+    "title": "Chapters",
+    "section": "",
+    "text": "This is a Quarto.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contrib.html",
+    "href": "contrib.html",
+    "title": "DZ Stat",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Mohamed Heddar",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2019\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Mohamed Heddar",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "Chapters/CH2_EMPLOI/Untitled.html",
+    "href": "Chapters/CH2_EMPLOI/Untitled.html",
+    "title": "DZ Stat",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\ndf = pd.read_excel(\"Table60.xlsx\")\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 48 entries, 0 to 47\nData columns (total 6 columns):\n #   Column  Non-Null Count  Dtype  \n---  ------  --------------  -----  \n 0   Wilaya  48 non-null     object \n 1   1966    48 non-null     float64\n 2   1977    48 non-null     float64\n 3   1987    48 non-null     float64\n 4   1998    48 non-null     float64\n 5   2008    48 non-null     float64\ndtypes: float64(5), object(1)\nmemory usage: 2.4+ KB\n\n\n\nimport geopandas as gpd\nimport matplotlib.pyplot as plt\n\ntracts = gpd.read_file(\"converted_shape.csv\")\nprint('Observations, Attributes:',tracts.shape)\n# tracts[\"ADM1\"] = df.sort_values(\"Wilaya\")[\"Wilaya\"]\n# tracts = tracts.merge(df, left_on  = \"ADM1\", right_on= \"Wilaya\")\ntracts\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n~\\AppData\\Local\\Temp/ipykernel_10188/282596048.py in &lt;module&gt;\n      2 import matplotlib.pyplot as plt\n      3 \n----&gt; 4 tracts = gpd.read_file(\"converted_shape.csv\")\n      5 print('Observations, Attributes:',tracts.shape)\n      6 # tracts[\"ADM1\"] = df.sort_values(\"Wilaya\")[\"Wilaya\"]\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\io\\file.py in _read_file(filename, bbox, mask, rows, **kwargs)\n    242                 )\n    243 \n--&gt; 244             return GeoDataFrame.from_features(\n    245                 f_filt, crs=crs, columns=columns + [\"geometry\"]\n    246             )\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\geodataframe.py in from_features(cls, features, crs, columns)\n    608             row.update(feature[\"properties\"])\n    609             rows.append(row)\n--&gt; 610         return GeoDataFrame(rows, columns=columns, crs=crs)\n    611 \n    612     @classmethod\n\n~\\anaconda3\\lib\\site-packages\\geopandas\\geodataframe.py in __init__(self, data, geometry, crs, *args, **kwargs)\n    146             # by pandas internals trying to access this\n    147             if (self.columns == \"geometry\").sum() &gt; 1:\n--&gt; 148                 raise ValueError(\n    149                     \"GeoDataFrame does not support multiple columns \"\n    150                     \"using the geometry column name 'geometry'.\"\n\nValueError: GeoDataFrame does not support multiple columns using the geometry column name 'geometry'.\n\n\n\n\ntracts.columns\n\nIndex([        'ID',        'LBL',        'FIP',     'MMT_ID', 'SHORT__FRM',\n         'LONG_FRM',       'ADM0',       'ADM1',       'ADM2',       'ADM3',\n             'ADM4',       'ADM5',      'STL-0',      'STL-1',      'STL-2',\n            'STL-3',      'STL-4',      'STL-5',   'geometry',     'Wilaya',\n               1966,         1977,         1987,         1998,         2008],\n      dtype='object')\n\n\n\nfig, ax = plt.subplots(figsize = (8, 8), dpi = 100)\ntracts.plot(column=1966, cmap='RdBu', edgecolor='w', legend=True, ax = ax)\nax.set_axis_off()\n\n\n\n\n\n\n\n\n\ntracts = gpd.GeoDataFrame.from_file(r\"D:\\\\OneDrive - ensmm-annaba.dz\\\\Algeria Statistics\\\\Algeria Shapefiles\\\\earthworks.stanford.edu\\\\ALG.shp\", encoding=\"utf-8\")\nprint('Observations, Attributes:',tracts.shape)\ntracts.columns\n\nObservations, Attributes: (48, 19)\n\n\nIndex(['ID', 'LBL', 'FIP', 'MMT_ID', 'SHORT__FRM', 'LONG_FRM', 'ADM0', 'ADM1',\n       'ADM2', 'ADM3', 'ADM4', 'ADM5', 'STL-0', 'STL-1', 'STL-2', 'STL-3',\n       'STL-4', 'STL-5', 'geometry'],\n      dtype='object')\n\n\n\ntracts.drop([\"LBL\", \"FIP\", \"MMT_ID\", \"SHORT__FRM\", \"LONG_FRM\", \"ADM0\", \"ADM2\", \"ADM3\", \"ADM4\", \"ADM5\"], axis = 1)\ntracts.to_csv(\"converted_shape.csv\")\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Chapters",
+      "CH2 EMPLOI",
+      "Untitled"
+    ]
+  }
+]

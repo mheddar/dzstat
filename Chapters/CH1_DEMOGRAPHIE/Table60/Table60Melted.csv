@@ -1,0 +1,241 @@
+,Wilaya,year,density
+1,Adrar,1966,0.2
+2,Chlef,1966,70.7
+3,Laghouat,1966,4.1
+4,Oum El Bouaghi,1966,34
+5,Batna,1966,30.6
+6,Bejaia,1966,131.2
+7,Biskra,1966,10.1
+8,Bechar,1966,0.5
+9,Blida,1966,175.3
+10,Bouira,1966,58.4
+11,Tamanrasset,1966,0.1
+12,Tebessa,1966,16.2
+13,Tlemcen,1966,45.7
+14,Tiaret,1966,15.3
+15,Tizi-Ouzou,1966,146.8
+16,Alger*,1966,3643.8
+17,Djelfa,1966,3.6
+18,Jijel,1966,92.4
+19,Setif,1966,73
+20,Saida,1966,17.1
+21,Skikda,1966,80.7
+22,Sidi Bel Abbes,1966,27.6
+23,Annaba,1966,151.9
+24,Guelma,1966,53.7
+25,Constantine,1966,159.2
+26,Medea,1966,41
+27,Mostaganem,1966,125.2
+28,M’Sila,1966,16
+29,Mascara,1966,52.6
+30,Ouargla,1966,0.6
+31,Oran,1966,212.8
+32,El Bayadh,1966,0.9
+33,Illizi,1966,0
+34,Bordj Bou Arreridj,1966,56.2
+35,Boumerdes,1966,176.6
+36,El Tarf,1966,37
+37,Tindouf,1966,0
+38,Tissemsilt,1966,42.2
+39,El Oued,1966,3.1
+40,Khenchela,1966,13.1
+41,Souk Ahras,1966,38.1
+42,Tipaza,1966,131.3
+43,Mila,1966,32.3
+44,Ain Defla,1966,57.7
+45,Naama,1966,2
+46,Ain Temouchent,1966,72.5
+47,Ghardaia,1966,1.2
+48,Relizane,1966,60.1
+49,Adrar,1977,0.3
+50,Chlef,1977,102.8
+51,Laghouat,1977,5.9
+52,Oum El Bouaghi,1977,45.2
+53,Batna,1977,42.1
+54,Bejaia,1977,156.5
+55,Biskra,1977,15.7
+56,Bechar,1977,0.8
+57,Blida,1977,295.4
+58,Bouira,1977,84.3
+59,Tamanrasset,1977,0.1
+60,Tebessa,1977,21.6
+61,Tlemcen,1977,59.1
+62,Tiaret,1977,19.7
+63,Tizi-Ouzou,1977,196.7
+64,Alger*,1977,5816.4
+65,Djelfa,1977,5
+66,Jijel,1977,132.9
+67,Setif,1977,105.6
+68,Saida,1977,21.3
+69,Skikda,1977,116
+70,Sidi Bel Abbes,1977,35.4
+71,Annaba,1977,243.2
+72,Guelma,1977,67.5
+73,Constantine,1977,218.7
+74,Medea,1977,53.7
+75,Mostaganem,1977,165.9
+76,M’Sila,1977,22.3
+77,Mascara,1977,68.6
+78,Ouargla,1977,0.9
+79,Oran,1977,326.1
+80,El Bayadh,1977,1.5
+81,Illizi,1977,0
+82,Bordj Bou Arreridj,1977,75.2
+83,Boumerdes,1977,276.3
+84,El Tarf,1977,58
+85,Tindouf,1977,0
+86,Tissemsilt,1977,54
+87,El Oued,1977,4.8
+88,Khenchela,1977,19.3
+89,Souk Ahras,1977,49.7
+90,Tipaza,1977,208
+91,Mila,1977,40.4
+92,Ain Defla,1977,80
+93,Naama,1977,2.8
+94,Ain Temouchent,1977,92.2
+95,Ghardaia,1977,1.9
+96,Relizane,1977,75.7
+97,Adrar,1987,0.5
+98,Chlef,1987,142.7
+99,Laghouat,1987,8.5
+100,Oum El Bouaghi,1987,59.7
+101,Batna,1987,61.7
+102,Bejaia,1987,214.5
+103,Biskra,1987,20.5
+104,Bechar,1987,1.1
+105,Blida,1987,414
+106,Bouira,1987,118.7
+107,Tamanrasset,1987,0.2
+108,Tebessa,1987,28.8
+109,Tlemcen,1987,78.9
+110,Tiaret,1987,27.9
+111,Tizi-Ouzou,1987,262.6
+112,Alger*,1987,6191.2
+113,Djelfa,1987,7.4
+114,Jijel,1987,183.3
+115,Setif,1987,153.9
+116,Saida,1987,34.8
+117,Skikda,1987,154.6
+118,Sidi Bel Abbes,1987,49.1
+119,Annaba,1987,316.8
+120,Guelma,1987,86.2
+121,Constantine,1987,303.8
+122,Medea,1987,73.6
+123,Mostaganem,1987,232.6
+124,M’Sila,1987,32.3
+125,Mascara,1987,95.4
+126,Ouargla,1987,1.3
+127,Oran,1987,439.6
+128,El Bayadh,1987,1.9
+129,Illizi,1987,0.1
+130,Bordj Bou Arreridj,1987,103.2
+131,Boumerdes,1987,409.2
+132,El Tarf,1987,82.5
+133,Tindouf,1987,0.1
+134,Tissemsilt,1987,72.4
+135,El Oued,1987,6.9
+136,Khenchela,1987,25.1
+137,Souk Ahras,1987,65.2
+138,Tipaza,1987,286.3
+139,Mila,1987,54.6
+140,Ain Defla,1987,109.8
+141,Naama,1987,3.8
+142,Ain Temouchent,1987,115.6
+143,Ghardaia,1987,2.5
+144,Relizane,1987,111.9
+145,Adrar,1998,0.7
+146,Chlef,1998,179.1
+147,Laghouat,1998,12.7
+148,Oum El Bouaghi,1998,76.6
+149,Batna,1998,78.9
+150,Bejaia,1998,262.2
+151,Biskra,1998,27.4
+152,Bechar,1998,1.4
+153,Blida,1998,497.3
+154,Bouira,1998,141.8
+155,Tamanrasset,1998,0.3
+156,Tebessa,1998,38.6
+157,Tlemcen,1998,93.2
+158,Tiaret,1998,35.2
+159,Tizi-Ouzou,1998,310.5
+160,Alger*,1998,3144.6
+161,Djelfa,1998,12
+162,Jijel,1998,222.3
+163,Setif,1998,201.6
+164,Saida,1998,41.3
+165,Skikda,1998,195.3
+166,Sidi Bel Abbes,1998,57.9
+167,Annaba,1998,387.6
+168,Guelma,1998,104.8
+169,Constantine,1998,370.8
+170,Medea,1998,90.7
+171,Mostaganem,1998,290.6
+172,M’Sila,1998,43
+173,Mascara,1998,113.9
+174,Ouargla,1998,2.1
+175,Oran,1998,571
+176,El Bayadh,1998,2.1
+177,Illizi,1998,0.1
+178,Bordj Bou Arreridj,1998,135
+179,Boumerdes,1998,435
+180,El Tarf,1998,105.6
+181,Tindouf,1998,0.2
+182,Tissemsilt,1998,84
+183,El Oued,1998,9.3
+184,Khenchela,1998,33.4
+185,Souk Ahras,1998,81
+186,Tipaza,1998,274.3
+187,Mila,1998,72.6
+188,Ain Defla,1998,135
+189,Naama,1998,4.3
+190,Ain Temouchent,1998,137.6
+191,Ghardaia,1998,3.5
+192,Relizane,1998,131.9
+193,Adrar,2008,0.9
+194,Chlef,2008,209
+195,Laghouat,2008,18.2
+196,Oum El Bouaghi,2008,91.6
+197,Batna,2008,91.9
+198,Bejaia,2008,279.3
+199,Biskra,2008,34.4
+200,Bechar,2008,1.7
+201,Blida,2008,636
+202,Bouira,2008,156.7
+203,Tamanrasset,2008,0.3
+204,Tebessa,2008,45.6
+205,Tlemcen,2008,104.8
+206,Tiaret,2008,41
+207,Tizi-Ouzou,2008,316
+208,Alger*,2008,3666.4
+209,Djelfa,2008,16.4
+210,Jijel,2008,247.2
+211,Setif,2008,229.1
+212,Saida,2008,48.9
+213,Skikda,2008,223.2
+214,Sidi Bel Abbes,2008,66.5
+215,Annaba,2008,423.6
+216,Guelma,2008,117.6
+217,Constantine,2008,429.1
+218,Medea,2008,92.5
+219,Mostaganem,2008,338.9
+220,M’Sila,2008,52.9
+221,Mascara,2008,132
+222,Ouargla,2008,2.6
+223,Oran,2008,685.6
+224,El Bayadh,2008,2.9
+225,Illizi,2008,0.2
+226,Bordj Bou Arreridj,2008,152.7
+227,Boumerdes,2008,539
+228,El Tarf,2008,122.3
+229,Tindouf,2008,0.3
+230,Tissemsilt,2008,93.4
+231,El Oued,2008,11.9
+232,Khenchela,2008,39.4
+233,Souk Ahras,2008,96.5
+234,Tipaza,2008,320.2
+235,Mila,2008,81.8
+236,Ain Defla,2008,156.6
+237,Naama,2008,6.4
+238,Ain Temouchent,2008,156.1
+239,Ghardaia,2008,4.2
+240,Relizane,2008,149.1
